@@ -1,0 +1,13 @@
+#diferença 
+
+a = int(input("Valor de A: "))
+b = int(input("Valor de B: "))
+c = int(input("Valor de C: "))
+d = int(input("Valor de D: "))
+
+produto_AxB = a*b
+produto_CxD = c*d
+
+diferenca = produto_AxB - produto_CxD
+
+print(f"A diferença dos produtos de A e B pelo produto de C e D é {diferenca}")

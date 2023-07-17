@@ -1,0 +1,9 @@
+#consumo
+
+distancia = int(input("Qual a Distância percorrida pelo carro? "))
+combustivel = float(input("Quanto combustivel foi gasto? "))
+#calculando consumo
+
+gasto = distancia/combustivel
+
+print(f"A autonomia do Carro foi de {gasto:.3f}KM/L")

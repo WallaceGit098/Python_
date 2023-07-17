@@ -1,0 +1,10 @@
+#Salário
+
+funcionario = int(input("Qual a Matrícula do Funcionário: "))
+horas = int(input("Quantas horas o funcionário Trabalhou? "))
+valor = float(input("Quanto o funcionário receber por Hora Trabalhada? "))
+
+#calcula
+salario = horas * valor
+
+print(f"O salário do Funcionário {funcionario} é R${salario:.2f} Reais!")

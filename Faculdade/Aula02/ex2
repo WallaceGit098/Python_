@@ -1,0 +1,5 @@
+raio = float(input("Digite o Valor do Raio: "))
+pi = float(3.14159)
+#Calculando Área
+area = pi*(raio**2)
+print(f"O valor da Área do Círculo é {area:.4f}!")

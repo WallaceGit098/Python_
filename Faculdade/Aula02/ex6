@@ -1,0 +1,10 @@
+#velocidade_1 = 60
+#velocidade_2 = 90
+
+distancia = int(input("Qual a distância entre os carros? "))
+
+distancia_por_min = float(0.5)
+
+tempo = distancia / distancia_por_min
+
+print(f"O carro Y levou {tempo:.0f} minutos para se distânciar {distancia}KM do carro X")

@@ -1,0 +1,13 @@
+#idade em dias
+
+idade = int(input("Quantos dias: "))
+
+anos = idade //365
+idade = idade%365
+
+meses = idade // 30
+
+dias = idade%30
+print(anos)
+print(meses)
+print(dias)
