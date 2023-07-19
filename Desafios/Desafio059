@@ -1,0 +1,66 @@
+num_1 = int(input("Digite o primeiro Número: "))
+num_2 = int(input("Digite o Segundo Número: "))
+
+seletor = int(input("""
+                    O que você deseja fazer a seguir?
+      [1]Somar
+      [2]Multiplicar
+      [3]Maior
+      [4]Novos Números
+      [5]Sair do programa 
+                    """))
+
+while seletor != 5:
+    if seletor == 1:
+        soma = num_1 + num_2
+        print(f"A o peração escolhida foi a de SOMA e o resultado é {soma}!")
+        seletor = int(input("""
+                            O que você deseja fazer a seguir?
+      [1]Somar
+      [2]Multiplicar
+      [3]Maior
+      [4]Novos Números
+      [5]Sair do programa 
+                            """))   
+    elif seletor == 2:
+        mult = num_1 * num_2
+        print(f"A operação escolhida foi a de MULTIPLICAÇÃO e o resultado é {mult}!")
+        seletor = int(input("""
+                            O que você deseja fazer a seguir?
+      [1]Somar
+      [2]Multiplicar
+      [3]Maior
+      [4]Novos Números
+      [5]Sair do programa 
+                            """))
+    elif seletor == 3:
+        maior = 0
+        if num_1 > num_2:
+            maior = num_1
+        elif num_2 > num_1:
+            maior = num_2
+        print(f"A o peração escolhida foi a MAIOR e o maior número digitado foi {maior}!")
+        seletor = int(input("""
+                            O que você deseja fazer a seguir?
+      [1]Somar
+      [2]Multiplicar
+      [3]Maior
+      [4]Novos Números
+      [5]Sair do programa 
+                            """))
+    elif seletor == 4:
+        print("Vôce escolheu trocar os números: ")
+        num_1 = int(input("Digite um Novo Número: "))
+        num_2 = int(input("Digite outro Novo Número: "))
+        print(f"Os Novos Números selecionados foram {num_1} e {num_2}!")
+
+        seletor = int(input("""
+                            O que você deseja fazer a seguir?
+      [1]Somar
+      [2]Multiplicar
+      [3]Maior
+      [4]Novos Números
+      [5]Sair do programa 
+                    """))
+        
+print("Vôce Optou por finalizar o programa, muito obrigado por participar!")

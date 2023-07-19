@@ -1,0 +1,39 @@
+marca = int(input("""                    -- CHURRASCANÇA BAR --
+                        Qual marca você deseja?
+                  
+                        Johnnie Walker
+                        Chivas
+                        Jack Daniels
+                        Sair
+                        """))
+
+
+if marca == 1:
+    print("Red Label - R$ 99,90")
+    print("Black Label - R$ 109,99")
+    print("Green Label - R$ 209,90")
+    print("Blue Label - R$ 599,90 ")
+    escolhido = int(input("Qual é o whisky escolhido dentro da marca Johnnie Walker"))
+    if escolhido == 10:
+        print(f"O escolhido foi o Red Lavel que custa R$99,90")
+            
+elif marca == 2:
+    print("Chivas 12 anos - R$112,90")
+    print("Chivas 18 anos - R$139,90")
+    print("Chivas 22 anos - R$579,00 ")
+
+elif marca == 3:
+    print("Maçã Verde - R$112,90")
+    print("Mel - R$112,90")
+    print("Classic Jack - R$1000,00")
+
+elif marca == 4:
+    print("Ballantines - R$110,00 ")
+    print("Buchanans - R$125,00")
+
+elif marca == 0:
+    print("O programa será encerrado!")
+
+    
+
+        

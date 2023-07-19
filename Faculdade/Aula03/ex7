@@ -1,0 +1,23 @@
+valores = input("Quais os valores? ").split()
+num_1 = int(valores[0])
+num_2 = int(valores[1])
+num_3 = int(valores[2])
+
+
+a,b,c = num_1,num_2,num_3
+
+if b < a:
+    a,b = b,a
+if c < b:
+    b,c = c,b
+    if b < a:
+        a,b = b,a
+
+print(f"""
+{a}
+{b}
+{c}
+
+{num_1}
+{num_2}
+{num_3}""")

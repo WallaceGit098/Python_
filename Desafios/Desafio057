@@ -1,0 +1,4 @@
+sexo = str(input("Digite seu Sexo: [M/F] ")).strip().upper()
+while sexo != "M" and "F":
+    sexo = str((input("Dados Invalidos, Por favor verifique seus dados: "))).strip().upper()
+print(f"Dados cadastrados com sucesso. O sexo adifionado foi {sexo}!")

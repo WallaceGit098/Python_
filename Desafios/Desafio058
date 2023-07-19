@@ -1,0 +1,9 @@
+from random import randint
+
+pc_num = randint(0,10)
+usuario_num = int(input("Tente acertar o Número que o computador escolheu: "))
+
+while usuario_num != pc_num:
+    usuario_num = int(input("Você ainda não acertou, continue tentando: "))
+
+print(f"Parabéns, você acertou o número que o computador escolheu, que era {pc_num}!")
