@@ -1,0 +1,25 @@
+
+while True:
+    print("="*20)
+    print(f"Banco do Futuro")
+    print("="*20)
+    #Verificando valor
+    valor = int(input("Qual valor deseja Sacar? R$"))
+    while not int:
+        valor = int(input("Qual valor deseja Sacar? R$"))
+    if valor == 0:
+        print("Finalizando Operação!")
+        break
+    notas_50 = valor // 50
+    total = valor - (notas_50 * 50)
+    notas_20 = total // 20
+    total -= (notas_20 *20)
+    notas_10 = total // 10
+    total -= (notas_10 *10)
+    notas_1 = total
+    print(f"""
+    Total de {notas_50} notas de R$50,
+    Total de {notas_20} notas de R$20
+    Total de {notas_10} notas de R$10
+    Total de {notas_1} notas de R$1""")
+    break

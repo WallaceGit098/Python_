@@ -1,0 +1,12 @@
+primeiro = int(input("Qual o Primeiro Termo da PA: "))
+razao = int(input("Qual a razao da PA: "))
+quantidade = int(input("Quantos termos quer verificar? "))
+
+termo = primeiro
+cont = 1
+
+while cont <= quantidade:
+    print(f"{termo} -> ",end="")
+    termo += razao
+    cont +=1
+print("FIM")

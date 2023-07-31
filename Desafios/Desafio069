@@ -1,0 +1,16 @@
+homem= maior = mulher_20 = 0
+
+while True:
+    idade = int(input("Digite a Idade: "))
+    sexo = str(input("Digite o Sexo da pessoa: [M/F] ")).upper()
+    contiua = str(input("Deseja Continuar?  [S/N] ")).upper()
+    if idade >= 18:
+        maior += 1
+    elif sexo == "M":
+        homem +=1
+    elif sexo == "F" and idade <= 20:
+        mulher_20 +=1
+    if contiua == "N":
+        break
+print(f"Foram digitados {homem} homens, Temos {maior} maiores de 18 na lista E {mulher_20} Mulheres com Menos de 20 anos")
+    

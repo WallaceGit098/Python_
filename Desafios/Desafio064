@@ -1,0 +1,12 @@
+numero = int(input("Digite um Número: "))
+soma = 0
+lista_num = []
+while numero != 999:
+    lista_num.append(numero)
+    soma += numero
+    numero = int(input("Digite um Número: "))
+lista_org = " -> ".join(map(str,lista_num))
+print(f"""
+      A somatória dos números é {soma}
+      Os números Digitados foram {lista_org}
+      A quantidade de Números digitados foi {len(lista_num)}""")

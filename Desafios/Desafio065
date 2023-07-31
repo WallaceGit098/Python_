@@ -1,0 +1,21 @@
+teste = 1
+cont = soma = maior = menor = 0
+while teste == 1:
+    numero_entrada = int(input("Digite um Número: "))
+    cont +=1
+    if cont == 1:
+        maior = menor = numero_entrada
+    else:
+        if numero_entrada < menor:
+            menor = numero_entrada
+        elif numero_entrada > maior:
+            maior = numero_entrada
+    soma += numero_entrada
+    verifica = str(input("Deseja Continuar a Execução? ")).upper()
+    if verifica != "SIM":
+        teste +=1
+media = soma/cont
+print(f"""A Soma dos Números Digitados é {soma}
+A média dos números é {media}
+total de Números Digitados foi {cont}!
+O Maior Número Digitado foi {maior} e o menor foi {menor}""")

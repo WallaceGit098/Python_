@@ -1,0 +1,28 @@
+from random import randint
+vitorias = 0
+while True:
+    jogador = int(input("Digite Um Número: "))
+    numero_pc = randint(0,10)
+    escolha = " "
+    total = jogador + numero_pc
+    while escolha not in "PI":
+        escolha = str(input("PAR ou IMPAR? [P/I]")).upper()
+    print(f"Você Jogou {jogador} e o Computador jogou {numero_pc} e o TOTAL foi {total}!")
+    print("Deu PAR" if total % 2 == 0 else "Deu Impar")
+
+    if escolha == "P":
+        if total % 2 ==0:
+            vitorias += 1
+            print("Você Venceu!")
+        else:
+            print("Você Perdeu")
+            break
+    elif escolha == "I":
+        if total % 2 == 0:
+            vitorias +=1
+            print("Você Ganhou")
+        else:
+            print("Perdeu fião!")
+            break
+    print("Vamos Jogar Novamente...")
+print(f"CABO! Você ganhou {vitorias} vezes!")

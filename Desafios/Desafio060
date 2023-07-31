@@ -1,0 +1,11 @@
+numero = int(input("Digite um Número: "))
+cont = numero
+fatorial = 1
+print(f"Calculando fatorial de {numero}! = ",end=" ")
+while cont > 0:
+    print(f"{cont} ", end="")
+    print(f"x" if cont > 1 else "=", end=" ")
+    fatorial *=cont
+    cont -=1
+
+print(fatorial)

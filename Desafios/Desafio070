@@ -1,0 +1,23 @@
+total= barato= mais_mil= cont= 0
+barato_nome = " "
+while True:
+    nome = str(input("Qual produto está comprando? "))
+    valor = float(input("Qual o Valor do Produto?  R$"))
+    continua = str(input("Deseja Continua? [S/N] ")).upper()
+    #Verificando se quer  continuar
+    while continua not in "SN":
+        continua = str(input("Deseja Continuar?? [S/N] ")).upper() 
+    if continua == "N":
+        break  
+    cont +=1 
+    total += valor
+    if valor < barato or cont == 1:
+        barato = valor
+        barato_nome = nome
+    if valor >= 1000:
+        mais_mil +=1
+    
+print(f""" -------- FIM DO PROGRAMA --------
+O total da Compra foi: R${total}
+Temos {mais_mil} Produtos que custam mais de R$1000
+O produto MAIS BARATO foi {barato_nome} que custou R${barato}""")
