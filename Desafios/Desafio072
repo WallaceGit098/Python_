@@ -1,0 +1,7 @@
+numero = int(input("Digite um número de 0 a 20: "))
+extenso = ("zero", "Um", "dois","tres","quatro","cinco","seis","sete","oito",
+           "nove","dez","onze","doze","treze","catorze","quinze","dezesseis",
+           "dezessete","dezoito","dezenove","vinte")
+while numero > 20 or numero <0:
+    numero = int(input("Tente novamente. Digite um Número de 0 a 20: "))
+print(extenso[numero])

@@ -1,0 +1,23 @@
+tabela =("Botafogo","Flamengo","Palmeiras","Grêmio","Fluminense",
+"Bragantino","Athletico-PR","São Paulo","Cuiabá","Cruzeiro",
+"Fortaleza","Internacional","Atlético-MG","Corinthians",
+"Santos","Goiás","Bahia","Coritiba","América-MG","Vasco")
+
+top_05 = print(f"Os 5 primeiros Colocados São: {tabela[0:6]}")
+print("-="*50)
+
+
+rebaixamento = tabela[-1:-5:-1]
+print(f"Os times que vão ser rebaixados são: {rebaixamento}")
+print("-="*50)
+
+alfabetica = sorted(tabela)
+print(f"Os times em Ordem alfabética São: ", end="")
+for i in alfabetica:
+    print(i,end=", ")
+print("")
+print("-="*50)
+
+posi = tabela.index("Cuiabá")
+print(f"O Cuiabá está na posição {posi}!")
+print("-="*50)

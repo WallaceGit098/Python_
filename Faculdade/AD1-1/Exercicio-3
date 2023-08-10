@@ -1,0 +1,32 @@
+numeros = input("Digite alguns Números: ")
+par = impar = quant_par = quant_impar = media_par = media_impar = 0
+numeros_int = list(map(int,numeros.split()))
+
+#Verifica Par/impar
+for i in numeros_int:
+    if i % 2 == 0:
+        quant_par+=1
+        par +=i
+    elif i % 2 == 1:
+        quant_impar+=1
+        impar +=i
+#Organiza Lista para Mostrar O maior
+lista_organizada = sorted(numeros_int)
+#Maior e Menor
+menor = min(numeros_int)
+maior = max(numeros_int)
+
+#Faz a Média dos Pares/Impares
+if quant_par > 0:
+    media_par = par/quant_par
+else:
+    media_par = 0.0
+if quant_impar > 0:
+    media_impar =impar/quant_impar
+else:
+    media_impar = 0.0
+
+print(f"""Menor: {menor}
+Maior: {maior}
+Média dos Pares: {media_par:.1f}
+Média dos Impares: {media_impar:.1f}""")

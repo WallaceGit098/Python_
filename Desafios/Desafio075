@@ -1,0 +1,22 @@
+num_1 = int(input("Digite um Número: "))
+num_2 = int(input("Digite um Número: "))
+num_3 = int(input("Digite um Número: "))
+num_4 = int(input("Digite um Número: "))
+cont = 0
+numeros = (num_1,num_2,num_3,num_4)
+
+print(f" Você Digitou os Números {numeros}")
+
+print(f"O valor 9 apareceu {numeros.count(9)} vezes!")
+
+for i in numeros:
+    if i == 3:
+        print(f"O valor 3 foi digitado na posição {numeros.index(3)+1}")
+        cont+=1
+if cont == 0:
+    print(f"O valor 3 não foi digitado nenhuma vez!")
+
+print(f"Os Números pares digitados foram: ", end=" ")
+for i in numeros:
+    if i % 2 == 0:
+        print(i, end=" ")
