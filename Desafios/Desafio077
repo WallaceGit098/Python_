@@ -1,0 +1,8 @@
+palavras = ("escada","criança","fralda","leao",
+            "passaro","nataçao","banho","musculaçao")
+for i in range(0,len(palavras)):
+    palavra = palavras[i]
+    print(f"A palavra {palavra} tem as vogais ",end="")
+    for teste in range(0,len(palavra)):        
+        if palavra[teste] in "aeiou":
+            print(f"{palavra[teste]}",end=" ")

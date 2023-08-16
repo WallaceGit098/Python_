@@ -1,0 +1,22 @@
+lista_valores = []
+maior = menor =  0
+
+for i in range(5):
+    lista_valores.append(int(input("Digite o valor que deseja: ")))
+    if i == 0:
+        maior=menor = lista_valores[i]
+    else:
+        if lista_valores[i] > maior:
+            maior = lista_valores[i]
+        elif lista_valores[i] < menor:
+            menor = lista_valores[i]
+        
+print(f"O maior valor digitado foi o número {maior} nas posições ",end="")
+for pos, valor in enumerate(lista_valores):
+    if valor == maior:
+        print(pos,"...",end="")
+print(f"O menor valor digitado foi o número {menor} nas posições ",end="")
+for pos, valor in enumerate(lista_valores):
+    if valor == menor:
+        print(pos,"...",end="")
+    
